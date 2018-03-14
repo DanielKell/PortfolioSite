@@ -1,3 +1,35 @@
-.logo img {
-  height: 110px;
-  width: 110px; }
+.header {
+  display: flex;
+  background-color: lightcyan; }
+  .header .logo {
+    width: 33.3%;
+    margin: 10px; }
+    .header .logo img {
+      height: 110px;
+      width: 110px;
+      border-radius: 60px;
+      border: .75px solid black; }
+  .header .nav {
+    width: 66.7%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .header .nav .nav-list {
+      display: flex; }
+      .header .nav .nav-list li {
+        margin: 10px; }
+
+.intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgreen;
+  height: 300px; }
+  .intro h1 {
+    margin: 100px 0px 50px 0px; }
+
+.skills {
+  background-color: lightgray; }
+  .skills .web-skills .skill-pic {
+    height: 75px;
+    width: 75px; }
