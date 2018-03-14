@@ -54,9 +54,30 @@
     background-color: lightgray;
 
     .web-skills {
-        .skill-pic {
-            height: 75px;
-            width: 75px;
-        }
+
+        li {
+            display: flex;
+            align-items: center;
+
+            .skill-left {
+
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .skill-pic {
+                    height: 75px;
+                    width: 75px;
+                }
+            }
+
+            .skill-right {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    }
     }
 }
