@@ -37,7 +37,7 @@
 }
 
 //INTRO STYLES
-
+//Parallax Scrolling: https://www.w3schools.com/howto/howto_css_parallax.asp
 .intro {
     display: flex;
     align-items: center;
@@ -78,6 +78,23 @@
                 flex-direction: column;
                 align-items: center;
             }
+        }
+
+        h4 {
+            text-align: center;
+        }
     }
+}
+//PROJECT STYLES
+// Use: https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+
+//FOOTER STYLES
+.footer {
+    background-color: lightpink;
+
+    .copyright {
+
+        text-align: center;
+
     }
 }

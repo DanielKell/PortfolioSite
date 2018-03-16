@@ -46,3 +46,10 @@
       display: flex;
       flex-direction: column;
       align-items: center; }
+  .skills .web-skills h4 {
+    text-align: center; }
+
+.footer {
+  background-color: lightpink; }
+  .footer .copyright {
+    text-align: center; }
