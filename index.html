@@ -13,6 +13,7 @@
         <title>Daniel Kell's Site</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     </head>
     <body>
     
@@ -123,18 +124,46 @@
             </div>
 
             <div class="projects">
-                Projects
+                
+                <!-- Modal1 -->
+                <div id="ex1" class="modal">
+                    <div>
+                        <p>MailMonkey</p>
+                        <div class="project-pic">
+                            <img src="images/projectPics/mailMonkey/MailMonkey Desktop.jpg">
+                        </div>
+                        <p>Here it is</p>
+                    </div>
+                    <a href="#" rel="modal:close">Close</a>
+                </div>
+                    
+                <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+
+                <!-- Modal2 -->
+                    <div id="ex2" class="modal">
+                        <p>MODAL2</p>
+                        <a href="#" rel="modal:close">Close</a>
+                    </div>
+                                            
+                <p><a href="#ex2" rel="modal:open">Open Modal</a></p>
+
             </div>
+
             <div class="footer">
                 <div class="socials">
                     <p>Connect with me:</p>
-                    Use: https://www.w3schools.com/howto/howto_css_zoom_hover.asp
                     
+
                 </div>
                 <div class="copyright">
                     <p>© 2018 <span>Daniel Kell</span>. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript" src="js/modals.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
     </body>
 </html>

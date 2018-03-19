@@ -49,6 +49,9 @@
   .skills .web-skills h4 {
     text-align: center; }
 
+.project-pic img {
+  width: 70vw; }
+
 .footer {
   background-color: lightpink; }
   .footer .copyright {
