@@ -49,8 +49,44 @@
   .skills .web-skills h4 {
     text-align: center; }
 
+.project-title {
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 30px; }
+
+.project-desc {
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  font-size: 20px; }
+
+.project-details {
+  padding: 0px 25px; }
+  .project-details .project-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; }
+    .project-details .project-tech-list .project-tech-list-item {
+      width: 33.33%;
+      padding: 10px 0px;
+      font-size: 20px; }
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid black;
+  font-size: 20px; }
+
+.modal {
+  max-width: none !important;
+  vertical-align: top !important;
+  width: 100% !important;
+  padding: 15px 0px !important;
+  background-color: #f2f7ff !important; }
+
 .project-pic img {
-  width: 70vw; }
+  max-width: 100%; }
 
 .footer {
   background-color: lightpink; }
