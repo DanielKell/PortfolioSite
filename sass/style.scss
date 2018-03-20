@@ -87,6 +87,13 @@
 }
 //PROJECT STYLES
 
+    h3 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 20px;
+        font-family: 'Pavanam';
+    }
+
     .project-title {
         text-align: center;
         padding-bottom: 2%;
@@ -124,6 +131,28 @@
         margin-top: 15px;
         border-top: 1px solid black;
         font-size: 20px;
+    }
+
+    .project-part {
+        display: flex;
+        height: 100px;
+        align-items: center;
+
+        a {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .project-background {
+            height: 100px;
+            width: 100px;
+        }
+
+        .project-dFox {
+            background: url('../images/projectPics/danielFox/danielFoxTest.jpeg') no-repeat 0;
+            background-size: contain;
+        }
     }
 
     .modal {
