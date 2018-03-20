@@ -1,12 +1,25 @@
+h3 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: 'Pavanam'; }
+
+h4 {
+  font-family: 'Pavanam';
+  font-size: 18px; }
+
+p {
+  font-family: "Gilda Display";
+  font-size: 17px; }
+
 .header {
-  display: flex;
-  background-color: lightcyan; }
+  display: flex; }
   .header .logo {
     width: 33.3%;
     margin: 10px; }
     .header .logo img {
-      height: 110px;
-      width: 110px;
+      height: 100px;
+      width: 100px;
       border-radius: 60px;
       border: .75px solid black; }
   .header .nav {
@@ -23,8 +36,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: lightgreen;
-  height: 300px; }
+  height: 300px;
+  background-image: url("../images/backgroundTest.jpg");
+  background-size: contain;
+  opacity: 0.3; }
   .intro h1 {
     margin: 100px 0px 50px 0px; }
 
@@ -39,21 +54,21 @@
       flex-direction: column;
       align-items: center; }
       .skills .web-skills li .skill-left .skill-pic {
-        height: 75px;
-        width: 75px; }
+        height: 100px;
+        width: 100px;
+        background-color: lightsalmon;
+        border-radius: 50px; }
+        .skills .web-skills li .skill-left .skill-pic img {
+          margin: 15px; }
     .skills .web-skills li .skill-right {
-      width: 60%;
+      width: 56%;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      padding: 2%;
+      text-align: center; }
   .skills .web-skills h4 {
     text-align: center; }
-
-h3 {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 20px;
-  font-family: 'Pavanam'; }
 
 .project-title {
   text-align: center;
