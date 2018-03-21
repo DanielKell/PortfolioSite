@@ -1,3 +1,8 @@
+h2 {
+  font-size: 33px;
+  font-family: 'Pavanam';
+  color: floralwhite; }
+
 h3 {
   text-align: center;
   padding-top: 20px;
@@ -13,7 +18,8 @@ p {
   font-size: 17px; }
 
 .header {
-  display: flex; }
+  display: flex;
+  background-color: rgba(255, 155, 88, 0.1); }
   .header .logo {
     width: 33.3%;
     margin: 10px; }
@@ -35,16 +41,33 @@ p {
 .intro {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  height: 300px;
-  background-image: url("../images/backgroundTest.jpg");
-  background-size: contain;
-  opacity: 0.3; }
+  flex-direction: column; }
+  .intro img {
+    width: 100%;
+    margin: 0 auto; }
   .intro h1 {
     margin: 100px 0px 50px 0px; }
+  .intro .intro-1 {
+    position: absolute;
+    top: 160px; }
+  .intro .intro-2 {
+    position: absolute;
+    top: 200px; }
+  .intro .intro-header {
+    left: 50%;
+    animation-duration: 20s;
+    animation-name: slidein;
+    animation-iteration-count: infinite; }
+
+@keyframes slidein {
+  from { }
+  50% {
+    left: 52%; }
+  to {
+    left: 50%; } }
 
 .skills {
-  background-color: lightgray; }
+  background-color: rgba(255, 155, 88, 0.1); }
   .skills .web-skills li {
     display: flex;
     align-items: center; }
@@ -56,7 +79,7 @@ p {
       .skills .web-skills li .skill-left .skill-pic {
         height: 100px;
         width: 100px;
-        background-color: lightsalmon;
+        background-color: rgba(145, 150, 160, 0.329);
         border-radius: 50px; }
         .skills .web-skills li .skill-left .skill-pic img {
           margin: 15px; }
@@ -69,6 +92,9 @@ p {
       text-align: center; }
   .skills .web-skills h4 {
     text-align: center; }
+
+.video {
+  width: 100%; }
 
 .project-title {
   text-align: center;
