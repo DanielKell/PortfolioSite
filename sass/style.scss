@@ -1,248 +1,281 @@
 //GLOBAL STLYES
 
-    h2 {
-        font-size: 33px;
-        font-family: 'Pavanam';
-        color: floralwhite;
-    }
+body {
+  background-color: rgba(255, 155, 88, 0.075);
+}
 
-    h3 {
-        text-align: center;
-        padding-top: 20px;
-        font-size: 20px;
-        font-family: 'Pavanam';
-    }
+a{
+    text-decoration: none;
+    color: black;
+}
 
-    h4 {
-        font-family: 'Pavanam';
-        font-size: 18px;
-    }
+h2 {
+  font-size: 24px;
+  font-family: "Offside";
+  color: midnightblue;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
 
-    p {
-        font-family: "Gilda Display";
-        font-size: 17px;
-    }
+h3 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: "Offside";
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Offside";
+  font-size: 17px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Gilda Display";
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700;
+}
 
 //HEADER STYLES
 
 .header {
+  display: flex;
 
+  .logo {
+    width: 33.3%;
+    margin: 10px;
+
+    img {
+      height: 100px;
+      width: 100px;
+      border-radius: 60px;
+      border: 0.75px solid black;
+    }
+  }
+
+  .nav {
+    width: 66.7%;
     display: flex;
-    background-color: rgba(255, 155, 88, 0.1);
+    justify-content: flex-end;
+    align-items: center;
 
-    .logo {
+    .nav-list {
+      display: flex;
 
-        width: 33.3%;
+      li {
         margin: 10px;
-
-        img {
-            height: 100px;
-            width: 100px;
-            border-radius: 60px ;
-            border: .75px solid black;
-        }
+      }
     }
-
-    .nav {
-        width: 66.7%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        .nav-list {
-            display: flex;
-            
-            li {
-                margin: 10px;
-            }
-        }
-    }
+  }
 }
-
 
 //INTRO STYLES
 //Parallax Scrolling: https://www.w3schools.com/howto/howto_css_parallax.asp
 .intro {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-    img {
-        width: 100%;
-        margin: 0 auto;
+  img {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.7;
+  }
+
+  h1 {
+    margin: 100px 0px 50px 0px;
+  }
+
+  .intro-1 {
+    position: absolute;
+    top: 160px;
+  }
+
+  .intro-2 {
+    position: absolute;
+    top: 200px;
+  }
+
+  .intro-header {
+    left: 42%;
+    animation-duration: 20s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes slidein {
+    from {
     }
 
-    h1 {
-        margin: 100px 0px 50px 0px;
+    50% {
+      left: 45%;
     }
 
-    .intro-1 {
-        position: absolute;
-        top: 160px;
+    to {
+      left: 42%;
     }
-
-    .intro-2 {
-        position: absolute;
-        top: 200px;
-    }
-
-        .intro-header {
-        left: 50%;
-        animation-duration: 20s;
-        animation-name: slidein;
-        animation-iteration-count: infinite;
-    }
-          
-        @keyframes slidein {
-            from {
-            }
-            
-            50% {
-                left: 52%;
-            }
-
-            to {
-                left: 50%;
-            }
-        }
+  }
 }
 
 .skills {
-    background-color: rgba(255, 155, 88, 0.1);
+  .web-skills {
+    li {
+      display: flex;
+      align-items: center;
+      padding: 15px 15px;
 
-    .web-skills {
+      .skill-left {
+        width: 36%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        li {
-            display: flex;
-            align-items: center;
+        .skill-pic {
+          height: 100px;
+          width: 100px;
+          background-color: darkseagreen;
+          border-radius: 50px;
+          margin-bottom: 10px;
 
-            .skill-left {
-
-                width: 40%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                .skill-pic {
-                    height: 100px;
-                    width: 100px;
-                    background-color: rgba(145, 150, 160, 0.329);
-                    border-radius: 50px;
-
-                    img {
-                        margin: 15px;
-                    }
-                }
-            }
-
-            .skill-right {
-                width: 56%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 2%;
-                text-align: center;
-            }
+          img {
+            margin: 15px;
+          }
         }
+      }
 
-        h4 {
-            text-align: center;
+      .skill-right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        text-align: center;
+
+        p {
+          margin: 5%;
         }
+      }
     }
+
+    h4 {
+      text-align: center;
+    }
+  }
 }
 
 //Video Styles
 
 .video {
-    width: 100%;
+  width: 100%;
 }
-
 
 //PROJECT STYLES
 
-    .project-title {
-        text-align: center;
-        padding-bottom: 2%;
-        font-size: 30px;
+.projects-header {
+    padding: 10px 0px;
+}
+
+.project-title {
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 30px;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.project-desc {
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  font-size: 20px;
+}
+
+.project-details {
+  padding: 0px 25px;
+
+  .project-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .project-tech-list-item {
+      width: 33.33%;
+      padding: 15px 0px;
+      font-size: 20px;
+    }
+  }
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  margin: 15px 20px;
+  border-top: 1px solid black;
+  font-size: 20px;
+}
+
+.project-part {
+  display: flex;
+  height: 100px;
+  align-items: center;
+
+  .project-part-title {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h4 {
+        margin-bottom: 10px;
     }
 
-    .project-desc {
-        text-align: center;
-        padding: 10px 30px 10px 30px;
-        font-size: 20px;  
+    p {
+        font-style: italic;
+        font-size: 15px;
     }
+  }
 
-    .project-details {
-        padding: 0px 25px; 
+  .project-part-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
 
-        .project-tech-list { 
+  .project-background {
+    height: 100px;
+    width: 100px;
+  }
 
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-            
+  .project-dFox {
+    background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg")
+      no-repeat 0;
+    background-size: contain;
+  }
+}
 
-            .project-tech-list-item {
-                width: 33.33%;
-                padding: 10px 0px;
-                font-size: 20px;
-            }
-        }
-    }
+.modal {
+  max-width: none !important;
+  vertical-align: top !important;
+  width: 100% !important; //90% on desktop
+  padding: 15px 0px !important;
+  background-color: whitesmoke !important;
+}
 
-    .project-links {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 15px;
-        margin-top: 15px;
-        border-top: 1px solid black;
-        font-size: 20px;
-    }
-
-    .project-part {
-        display: flex;
-        height: 100px;
-        align-items: center;
-
-        a {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .project-background {
-            height: 100px;
-            width: 100px;
-        }
-
-        .project-dFox {
-            background: url('../images/projectPics/danielFox/danielFoxTest.jpeg') no-repeat 0;
-            background-size: contain;
-        }
-    }
-
-    .modal {
-        max-width: none !important;
-        vertical-align: top !important;
-        width: 100% !important; //90% on desktop
-        padding: 15px 0px !important;
-        background-color: #f2f7ff !important;
-    }
-
-    .project-pic {
-        img {
-            max-width: 100%;
-        }
-    }
-
+.project-pic {
+  img {
+    max-width: 100%;
+  }
+}
 
 //FOOTER STYLES
 .footer {
-    background-color: lightpink;
+  background-color: lightpink;
 
-    .copyright {
-
-        text-align: center;
-
-    }
+  .copyright {
+    text-align: center;
+  }
 }

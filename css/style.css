@@ -1,25 +1,38 @@
+body {
+  background-color: rgba(255, 155, 88, 0.075); }
+
+a {
+  text-decoration: none;
+  color: black; }
+
 h2 {
-  font-size: 33px;
-  font-family: 'Pavanam';
-  color: floralwhite; }
+  font-size: 24px;
+  font-family: "Offside";
+  color: midnightblue;
+  font-weight: 700;
+  letter-spacing: 0.4px; }
 
 h3 {
   text-align: center;
   padding-top: 20px;
   font-size: 20px;
-  font-family: 'Pavanam'; }
+  font-family: "Offside";
+  font-weight: 700; }
 
 h4 {
-  font-family: 'Pavanam';
-  font-size: 18px; }
+  font-family: "Offside";
+  font-size: 17px;
+  line-height: 1.1;
+  font-weight: 700; }
 
 p {
   font-family: "Gilda Display";
-  font-size: 17px; }
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700; }
 
 .header {
-  display: flex;
-  background-color: rgba(255, 155, 88, 0.1); }
+  display: flex; }
   .header .logo {
     width: 33.3%;
     margin: 10px; }
@@ -27,7 +40,7 @@ p {
       height: 100px;
       width: 100px;
       border-radius: 60px;
-      border: .75px solid black; }
+      border: 0.75px solid black; }
   .header .nav {
     width: 66.7%;
     display: flex;
@@ -44,7 +57,8 @@ p {
   flex-direction: column; }
   .intro img {
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    opacity: 0.7; }
   .intro h1 {
     margin: 100px 0px 50px 0px; }
   .intro .intro-1 {
@@ -54,7 +68,7 @@ p {
     position: absolute;
     top: 200px; }
   .intro .intro-header {
-    left: 50%;
+    left: 42%;
     animation-duration: 20s;
     animation-name: slidein;
     animation-iteration-count: infinite; }
@@ -62,44 +76,52 @@ p {
 @keyframes slidein {
   from { }
   50% {
-    left: 52%; }
+    left: 45%; }
   to {
-    left: 50%; } }
+    left: 42%; } }
 
-.skills {
-  background-color: rgba(255, 155, 88, 0.1); }
-  .skills .web-skills li {
+.skills .web-skills li {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px; }
+  .skills .web-skills li .skill-left {
+    width: 36%;
     display: flex;
+    flex-direction: column;
     align-items: center; }
-    .skills .web-skills li .skill-left {
-      width: 40%;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .skills .web-skills li .skill-left .skill-pic {
-        height: 100px;
-        width: 100px;
-        background-color: rgba(145, 150, 160, 0.329);
-        border-radius: 50px; }
-        .skills .web-skills li .skill-left .skill-pic img {
-          margin: 15px; }
-    .skills .web-skills li .skill-right {
-      width: 56%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2%;
-      text-align: center; }
-  .skills .web-skills h4 {
+    .skills .web-skills li .skill-left .skill-pic {
+      height: 100px;
+      width: 100px;
+      background-color: darkseagreen;
+      border-radius: 50px;
+      margin-bottom: 10px; }
+      .skills .web-skills li .skill-left .skill-pic img {
+        margin: 15px; }
+  .skills .web-skills li .skill-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
     text-align: center; }
+    .skills .web-skills li .skill-right p {
+      margin: 5%; }
+
+.skills .web-skills h4 {
+  text-align: center; }
 
 .video {
   width: 100%; }
 
+.projects-header {
+  padding: 10px 0px; }
+
 .project-title {
   text-align: center;
   padding-bottom: 2%;
-  font-size: 30px; }
+  font-size: 30px;
+  text-decoration: underline;
+  letter-spacing: 2px; }
 
 .project-desc {
   text-align: center;
@@ -114,14 +136,14 @@ p {
     text-align: center; }
     .project-details .project-tech-list .project-tech-list-item {
       width: 33.33%;
-      padding: 10px 0px;
+      padding: 15px 0px;
       font-size: 20px; }
 
 .project-links {
   display: flex;
   justify-content: space-around;
   padding-top: 15px;
-  margin-top: 15px;
+  margin: 15px 20px;
   border-top: 1px solid black;
   font-size: 20px; }
 
@@ -129,15 +151,26 @@ p {
   display: flex;
   height: 100px;
   align-items: center; }
-  .project-part a {
-    width: 50%;
+  .project-part .project-part-title {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+    .project-part .project-part-title h4 {
+      margin-bottom: 10px; }
+    .project-part .project-part-title p {
+      font-style: italic;
+      font-size: 15px; }
+  .project-part .project-part-image {
+    width: 40%;
     display: flex;
     justify-content: center; }
   .project-part .project-background {
     height: 100px;
     width: 100px; }
   .project-part .project-dFox {
-    background: url("../images/projectPics/danielFox/danielFoxTest.jpeg") no-repeat 0;
+    background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg") no-repeat 0;
     background-size: contain; }
 
 .modal {
@@ -145,7 +178,7 @@ p {
   vertical-align: top !important;
   width: 100% !important;
   padding: 15px 0px !important;
-  background-color: #f2f7ff !important; }
+  background-color: whitesmoke !important; }
 
 .project-pic img {
   max-width: 100%; }
