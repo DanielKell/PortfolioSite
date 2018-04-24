@@ -219,7 +219,7 @@ p {
 
 .project-part {
   display: flex;
-  height: 100px;
+  height: 110px;
   align-items: center;
 
   .project-part-title {
@@ -245,17 +245,65 @@ p {
     justify-content: center;
   }
 
-  .project-background {
-    height: 75px;
-    width: 100px;
-  }
 
-  .project-dFox {
+
+  .project-1 {
     background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg")
       no-repeat 0;
+  }
+
+  .project-2 {
+    background: url("../images/projectPics/mailMonkey/MailMonkeyMockup.jpeg")
+      no-repeat 0;
+  }
+
+  .project-3 {
+    background: url("../images/projectPics/kindred/KindredMockup.jpeg")
+      no-repeat 0;
+  }
+
+  .project-4 {
+    background: url("../images/projectPics/brainfit/BrainfitMockup.jpeg")
+      no-repeat 0;
+  }
+
+  .project-5 {
+    background: url("../images/projectPics/boomtown/BoomtownMockup.jpeg")
+      no-repeat 0;
+  }
+
+  .project-6 {
+    background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg")
+      no-repeat 0;
+  }
+
+  .project-7 {
+    background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg")
+      no-repeat 0;
+  }
+
+  .project-8 {
+    background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg")
+      no-repeat 0;
+  }
+
+  .project-9 {
+    background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg")
+      no-repeat 0;
+  }
+
+  .project-10 {
+    background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg")
+      no-repeat 0;
+  }
+
+  .project-background {
+    height: 90px;
+    width: 120px;
     background-size: contain;
     border: 1.5px solid lightgray;
   }
+
 }
 
 .modal {
