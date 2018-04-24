@@ -167,11 +167,12 @@ p {
     display: flex;
     justify-content: center; }
   .project-part .project-background {
-    height: 100px;
+    height: 75px;
     width: 100px; }
   .project-part .project-dFox {
     background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg") no-repeat 0;
-    background-size: contain; }
+    background-size: contain;
+    border: 1.5px solid lightgray; }
 
 .modal {
   max-width: none !important;

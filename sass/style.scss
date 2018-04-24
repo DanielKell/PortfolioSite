@@ -246,7 +246,7 @@ p {
   }
 
   .project-background {
-    height: 100px;
+    height: 75px;
     width: 100px;
   }
 
@@ -254,6 +254,7 @@ p {
     background: url("../images/projectPics/danielFox/DanielFoxMockup.jpeg")
       no-repeat 0;
     background-size: contain;
+    border: 1.5px solid lightgray;
   }
 }
 
